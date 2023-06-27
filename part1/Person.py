@@ -35,19 +35,28 @@ Fedor.say_hello()  # Hello
 # атрибуты объекта
 class Person:
     # конструктор
-    def __init__(self, name):
+    def __init__(self, name, age):
         self.name = name  # имя человека
-        self.age = 20  # возраст человека
+        self.age = age  # возраст человека
+        
+    def set_name(self, name):
+        self.name = name
 
+    def set_age(self, age):
+        self.age = age
+
+    def get_name(self):
+        return self.name
+
+    def get_age(self):
+        return self.age
+        
     def say_hello(self):
         print("Hello")
 
 
-Fedor = Person('Fedor')  # Создание объекта Person и передача атрибута name со значением Fedor
-print(Fedor.name)
-print(Fedor.age)
-
-Fedor.age = 25
-print(Fedor.age)
-
+person = Person("Timofey", 20)
+person.say_hello()
+print(person.get_name()) 
+print(person.get_age())
 
