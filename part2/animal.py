@@ -32,15 +32,15 @@ class Dog(Animal):
 
 
 animal = Animal("Generic animal")
-animal.speak()  # Вывод: Animal speaks
-animal.eat()  # Вывод: Animal eats
+animal.speak()  
+animal.eat()  
 
 cat = Cat("Barsik")
-cat.speak()  # Вывод: Meow!
-cat.eat()  # Вывод: Animal eats
-cat.catch_mice()  # Вывод: Cat catches mice
+cat.speak() 
+cat.eat()  
+cat.catch_mice()  
 
 dog = Dog("Sharik")
-dog.speak()  # Вывод: Woof!
-dog.eat()  # Вывод: Animal eats
-dog.fetch_ball()  # Вывод: Dog fetches ball
+dog.speak()  
+dog.eat()  
+dog.fetch_ball()  
