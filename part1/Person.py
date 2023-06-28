@@ -34,10 +34,9 @@ Fedor.say_hello()  # Hello
 
 # атрибуты объекта
 class Person:
-    # конструктор
     def __init__(self, name, age):
-        self.name = name  # имя человека
-        self.age = age  # возраст человека
+        self.name = name 
+        self.age = age 
         
     def set_name(self, name):
         self.name = name
